@@ -28,14 +28,14 @@ const Hero = () => {
             </div>
 
             <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
-              Transform Your <br />
-              <span className="text-primary-600">Social Media</span> Strategy
+              Elevate Your <br />
+              <span className="text-primary-600">Social Media</span> Presence
             </h1>
 
             <p className="text-xl text-gray-600 max-w-xl">
-              Unlock powerful insights with AI-driven analytics to boost your
-              social media engagement and grow your audience organically.
+              Harness the power of AI-driven insights to supercharge your engagement and grow your community effortlessly.
             </p>
+
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

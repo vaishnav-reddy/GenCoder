@@ -5,16 +5,16 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          600: '#2563EB',
-          700: '#1D4ED8',
-          100: '#DBEAFE',
+          600: '#16A34A', // Vibrant Emerald Green
+          700: '#15803D', // Deep Green for Hover/Focus
+          100: '#D1FAE5', // Soft Mint Green Tint
         },
-        secondary: '#3B82F6',
-        accent: '#EAB308',
-        background: '#F8FAFC',
-        text: '#1E293B',
-        border: '#E2E8F0',
-        foreground: 'rgb(var(--foreground))', // Added to match `--foreground` variable
+        secondary: '#22C55E', // Bright Green for Accents
+        accent: '#84CC16', // Lime Green for Highlights
+        background: '#F0FDF4', // Light Green-Tinted Background
+        text: '#065F46', // Dark Teal for Text
+        border: '#A7F3D0', // Soft Greenish Border
+        foreground: '#0F5132', // Deep Forest Green for Secondary Text
       },
       fontFamily: {
         sans: ['Inter', 'system-ui'],
@@ -22,7 +22,7 @@ module.exports = {
         mono: ['Source Code Pro', 'monospace'],
       },
       borderRadius: {
-        DEFAULT: '0.5rem',
+        DEFAULT: '0.75rem', // Slightly rounded for a softer, modern UI
       },
     },
   },

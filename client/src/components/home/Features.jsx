@@ -6,41 +6,42 @@ const Features = () => {
   const features = [
     {
       icon: <BarChart2 size={24} />,
-      title: "Real-time Analytics",
+      title: "Live Performance Metrics",
       description:
-        "Track your social media performance in real-time with comprehensive analytics and insights. Make data-driven decisions instantly.",
+        "Analyze your social media stats in real-time with detailed metrics and actionable insights. Make quick, informed decisions effortlessly.",
     },
     {
       icon: <Globe size={24} />,
-      title: "Global Reach Analysis",
+      title: "Worldwide Reach Insights",
       description:
-        "Understand your audience demographics and reach across different regions and platforms.",
+        "Gain a deeper understanding of your audience’s location and engagement across different regions and social platforms.",
     },
     {
       icon: <LineChart size={24} />,
-      title: "Growth Tracking",
+      title: "Growth Monitoring",
       description:
-        "Monitor your follower growth, engagement rates, and content performance over time.",
+        "Track your follower count, content engagement, and overall performance trends over time.",
     },
     {
       icon: <Target size={24} />,
-      title: "Audience Insights",
+      title: "Deep Audience Understanding",
       description:
-        "Get detailed insights about your audience preferences, behaviors, and engagement patterns.",
+        "Discover your audience’s preferences, habits, and interaction patterns with comprehensive data.",
     },
     {
       icon: <Share2 size={24} />,
-      title: "GPT-powered Insights",
+      title: "AI-Powered Suggestions",
       description:
-        "Leverage AI to generate content ideas, optimize posting times, and improve engagement.",
+        "Harness the power of AI to create engaging content, schedule posts optimally, and boost interaction rates.",
     },
     {
       icon: <Zap size={24} />,
-      title: "Smart Automation",
+      title: "Intelligent Workflow Automation",
       description:
-        "Automate your social media workflow with intelligent scheduling and posting features.",
+        "Simplify your social media management with smart scheduling and automated posting tools.",
     },
   ];
+
 
   return (
     <section id="features" className="py-20 px-4 bg-white">
@@ -51,12 +52,12 @@ const Features = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Powerful Features
+            Advanced Capabilities
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Everything you need to succeed on social media, powered by
-            cutting-edge AI technology
+            Unlock your full potential on social media with AI-driven tools and innovative technology.
           </p>
+
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
