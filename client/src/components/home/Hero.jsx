@@ -16,7 +16,7 @@ const Hero = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto min-h-screen flex items-center px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center py-20">
+        <div className="grid lg:grid-cols-1 gap-12 items-center py-20">
           <motion.div
             className="space-y-8"
             initial={{ opacity: 0, x: -20 }}
@@ -66,14 +66,14 @@ const Hero = () => {
               </div>
               <div>
                 <p className="text-gray-600">
-                  <span className="font-bold text-primary-600">200+</span>{" "}
+                  <span className="font-bold text-primary-600">100+</span>{" "}
                   satisfied users
                 </p>
               </div>
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -84,7 +84,7 @@ const Hero = () => {
               alt="Analytics Dashboard"
               className="relative rounded-2xl shadow-2xl"
             />
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

@@ -90,13 +90,13 @@ const EnhancedChatClient = ({ isExpanded, setIsExpanded }) => {
         <Button
           onClick={() => setIsExpanded(true)}
           size="lg"
-          className="rounded-full w-14 h-14 bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all duration-300">
+          className="rounded-full w-14 h-14 bg-green-600 hover:bg-green-700 shadow-lg hover:shadow-xl transition-all duration-300">
           <MessageCircle className="h-6 w-6 text-white" />
         </Button>
       ) : (
         <div className="relative">
           <Card className="w-[380px] shadow-2xl bg-white">
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-blue-600 text-white rounded-t-lg">
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-green-600 text-white rounded-t-lg">
               <CardTitle className="text-lg font-semibold">
                 Analytics Assistant
               </CardTitle>
@@ -104,7 +104,7 @@ const EnhancedChatClient = ({ isExpanded, setIsExpanded }) => {
                 variant="ghost"
                 size="sm"
                 onClick={() => setIsExpanded(false)}
-                className="h-8 w-8 p-0 hover:bg-blue-500">
+                className="h-8 w-8 p-0 hover:bg-green-500">
                 <span className="text-xl text-white">×</span>
               </Button>
             </CardHeader>
@@ -114,17 +114,15 @@ const EnhancedChatClient = ({ isExpanded, setIsExpanded }) => {
                   {messages.map((message, index) => (
                     <div
                       key={index}
-                      className={`flex ${
-                        message.type === "user"
+                      className={`flex ${message.type === "user"
                           ? "justify-end"
                           : "justify-start"
-                      }`}>
-                      <div
-                        className={`max-w-[80%] rounded-lg px-4 py-2 shadow-sm ${
-                          message.type === "user"
-                            ? "bg-blue-600 text-white"
-                            : "bg-gray-100"
                         }`}>
+                      <div
+                        className={`max-w-[80%] rounded-lg px-4 py-2 shadow-sm ${message.type === "user"
+                            ? "bg-green-600 text-white"
+                            : "bg-gray-100"
+                          }`}>
                         <p className="text-sm">{message.text}</p>
                       </div>
                     </div>
@@ -157,7 +155,7 @@ const EnhancedChatClient = ({ isExpanded, setIsExpanded }) => {
                     onClick={sendMessage}
                     disabled={isLoading || !inputMessage.trim()}
                     size="icon"
-                    className="bg-blue-600 hover:bg-blue-700 transition-colors">
+                    className="bg-green-600 hover:bg-green-700 transition-colors">
                     <Send className="h-4 w-4 text-white" />
                   </Button>
                 </div>

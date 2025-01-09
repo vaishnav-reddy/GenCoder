@@ -430,7 +430,7 @@ const Dashboard = () => {
         post.Post_Type === state.selectedPostTypes;
       const matchesSearch = state.search
         ? post.Post_ID.toLowerCase().includes(state.search.toLowerCase()) ||
-          post.Post_Type.toLowerCase().includes(state.search.toLowerCase())
+        post.Post_Type.toLowerCase().includes(state.search.toLowerCase())
         : true;
       return withinDateRange && matchesType && matchesSearch;
     });
@@ -569,15 +569,14 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <header
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
-        }`}>
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
+          }`}>
         <div className="max-w-7xl mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <Link
               to={"/"}
               className="text-2xl font-bold text-primary-600 cursor-pointer flex gap-4 justify-center items-center">
-              <img src="/insightly.svg" alt="Logo" className="h-10" />
+              <h className="h-10">GenCoder</h>
             </Link>
             <div className="hidden md:flex items-center gap-8">
               <Button
